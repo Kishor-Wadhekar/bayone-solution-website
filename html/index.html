@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="description" content="BayOne - Technology and Digital Transformation Solutions">
     <meta name="keywords" content="BayOne, AI, Technology, Digital Transformation">
     <meta name="author" content="BayOne">
-
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self'; frame-src 'self'; form-action 'self'; object-src 'none'; media-src 'self';">
     <title>BayOne | Technology & Digital Transformation</title>
 
     <!-- Favicon -->
@@ -19,14 +20,34 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    
+     <!-- Google Tag Manager -->
+    <!-- GTM script will be added here -->
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+    <!-- GTM noscript will be added here -->
+    <!-- End Google Tag Manager (noscript) -->
+<!-- Website Loader -->
+<div id="websiteLoader" class="website-loader">
+
+    <div class="loader-content">
+
+        <div class="loader-spinner"></div>
+
+        <p>Loading...</p>
+
+    </div>
+
+</div>
 
     <!-- =========================================
          HEADER
     ========================================== -->
-<header>
+<header id="siteHeader" class="site-header">
     <div class="container">
 
         <nav class="navbar navbar-expand-lg">
@@ -445,19 +466,15 @@
 
                 <div class="row align-items-center">
 
-                    <div class="col-lg-7">
-
-                        <span class="hero-eyebrow">
-                            Technology & Digital Transformation
-                        </span>
+                    <div class="col-lg-7" data-aos="fade-right">
 
                         <h1>
                             The future works here, at BayOne.
                         </h1>
 
                         <p class="hero-description">
-                            We help organizations transform their business
-                            through technology, data, AI and digital experiences.
+                           We solve business problems, bridge talent gaps,
+                            and drive innovation for customers
                         </p>
 
                         <div class="hero-actions">
@@ -477,7 +494,7 @@
                     <div class="col-lg-5">
 
                         <!-- Hero Image / Video -->
-                        <div class="hero-media">
+                        <div class="hero-media" data-aos="fade-left">
                             <img src="assets/bayone-about-us-img.jpg"
                                  alt="BayOne technology solutions"
                                  class="img-fluid">
@@ -501,7 +518,7 @@
 
                 <div class="row">
 
-                    <div class="section-heading text-center">
+                    <div class="section-heading text-center" data-aos="fade-up">
 
                         <span class="section-eyebrow">
                             Who We Are
@@ -533,7 +550,7 @@
 
             <div class="container">
 
-                <div class="section-heading text-center">
+                <div class="section-heading text-center" data-aos="fade-up">
 
                     <span class="section-eyebrow">
                         Our Services
@@ -553,7 +570,7 @@
                 <div class="row g-4">
 
                     <!-- Service -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="service-card">
 
@@ -579,7 +596,7 @@
 
 
                     <!-- Service -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="service-card">
 
@@ -605,7 +622,7 @@
 
 
                     <!-- Service -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="service-card">
 
@@ -631,7 +648,7 @@
 
 
                     <!-- Service -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="service-card">
                              <div class="service-icon">
@@ -658,7 +675,7 @@
 
 
                     <!-- Service -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="service-card">
                              <div class="service-icon">
@@ -684,7 +701,7 @@
 
 
                     <!-- Service -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="service-card">
                              <div class="service-icon">
@@ -807,7 +824,7 @@
 
                 <div class="row g-4">
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="case-study-card">
 
@@ -840,7 +857,7 @@
                     </div>
 
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="case-study-card">
 
@@ -873,7 +890,7 @@
                     </div>
 
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="case-study-card">
 
@@ -934,7 +951,7 @@
 
                 <div class="row g-4">
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="insight-card">
 
@@ -962,7 +979,7 @@
                     </div>
 
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="insight-card">
 
@@ -990,7 +1007,7 @@
                     </div>
 
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="insight-card">
 
@@ -1038,7 +1055,7 @@
                     </span>
 
                     <h2>
-                        Ready to transform your business?
+                        BayOne helps large companies compete like a startup
                     </h2>
 
                     <p>
@@ -1046,8 +1063,8 @@
                         together.
                     </p>
 
-                    <a href="#" class="btn btn-light">
-                        Let's Connect
+                    <a href="#" class="btn btn-primary">
+                        Contact Us
                     </a>
 
                 </div>
@@ -1072,7 +1089,7 @@
         <div class="row">
 
             <!-- Logo + Social Media -->
-            <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up">
 
                 <a href="index.html"
                    class="footer-logo-link">
@@ -1174,7 +1191,7 @@
 
 
             <!-- Main Navigation -->
-            <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+            <div class="col-6 col-lg-2 mb-4 mb-lg-0"  data-aos="fade-up">
 
                 <h3>Quick Links</h3>
 
@@ -1214,7 +1231,7 @@
 
 
             <!-- Services -->
-            <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="col-6 col-lg-3 mb-4 mb-lg-0"  data-aos="fade-up">
 
                 <h3>Services</h3>
 
@@ -1246,7 +1263,7 @@
 
 
             <!-- Contact -->
-            <div class="col-lg-3">
+            <div class="col-lg-3"  data-aos="fade-up">
 
                 <h3>Contact Us</h3>
 
@@ -1301,12 +1318,41 @@
 
 </footer>
 
+<!-- Back to Top -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg class="progress-ring" width="56" height="56" viewBox="0 0 56 56">
+        <circle
+            class="progress-ring-bg"
+            cx="28"
+            cy="28"
+            r="25">
+        </circle>
+
+        <circle
+            id="progressCircle"
+            class="progress-ring-progress"
+            cx="28"
+            cy="28"
+            r="25">
+        </circle>
+    </svg>
+
+    <span class="back-to-top-content">
+        <span id="scrollPercentage">0%</span>
+        <span class="back-to-top-arrow">↑</span>
+    </span>
+</button>
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
+     <script src="js/lenis.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/tracking.js"></script>
+   <script src="js/aos.js"></script>
+    
 
 </body>
 

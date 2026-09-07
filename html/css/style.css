@@ -9,10 +9,12 @@
 ========================================================= */
 
 :root {
-    --primary-color: #0b5ed7;
-    --primary-dark: #084298;
+    --primary-color: #cc297a;
+    --primary-dark: #a01e61;
     --secondary-color: #111827;
-
+--brand-primary: #CC297A;
+    --brand-secondary: #844190;
+    --scrollbar-track: #f5f5f5;
     --text-color: #1f2937;
     --text-light: #6b7280;
 
@@ -21,7 +23,7 @@
 
     --bg-light: #f7f8fa;
     --bg-dark: #111827;
-    --border-color: #e5e7eb;
+    --border-color: #cc297a;
 
     --transition: all 0.3s ease;
 }
@@ -33,8 +35,9 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--brand-primary) var(--scrollbar-track);
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -177,18 +180,13 @@ section {
 ========================================================= */
 
 .btn {
-    min-height: 48px;
-
+    min-height: 36px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
-    padding: 10px 24px;
-
+    padding: 7px 20px;
     border-radius: 4px;
-
-    font-weight: 600;
-
+    font-weight: 500;
     transition: var(--transition);
 }
 
@@ -197,35 +195,290 @@ section {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
-
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color:var(--primary-color);
+}
 .btn-primary:hover {
     color: var(--white);
-
     background-color: var(--primary-dark);
     border-color: var(--primary-dark);
-
     transform: translateY(-2px);
 }
 
 .btn-outline-primary:hover {
     color: var(--white);
     background-color: var(--primary-color);
+    transform: translateY(-2px);
+     border-color: var(--primary-dark);
+
 }
 
+/* =========================================
+   BayOne Custom Scrollbar
+========================================= */
+
+/* Firefox */
+
+
+/* Chrome / Edge / Safari */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        180deg,
+        var(--brand-primary),
+        var(--brand-secondary)
+    );
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+        180deg,
+        var(--brand-secondary),
+        var(--brand-primary)
+    );
+}
+
+/* =========================================
+   Back To Top - Scroll Progress
+========================================= */
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+}
+
+/* SVG Progress Ring */
+
+.progress-ring {
+    position: absolute;
+    inset: 0;
+    width: 56px;
+    height: 56px;
+    transform: rotate(-90deg);
+}
+
+.progress-ring-bg,
+.progress-ring-progress {
+    fill: none;
+    stroke-width: 2;
+}
+
+.progress-ring-bg {
+    stroke: #e9e9e9;
+}
+
+.progress-ring-progress {
+    stroke: #7b2cbf;
+    stroke-linecap: round;
+
+    stroke-dasharray: 157;
+    stroke-dashoffset: 157;
+
+    transition: stroke-dashoffset 0.1s linear;
+}
+
+/* Center Content */
+
+.back-to-top-content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 1;
+}
+
+#scrollPercentage {
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.back-to-top-arrow {
+    font-size: 16px;
+    line-height: 12px;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    .back-to-top {
+        right: 15px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .progress-ring {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* =========================================================
+   WEBSITE LOADER
+========================================================= */
+
+.website-loader {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #6a1b9a,
+        #d81b60
+    );
+
+    z-index: 99999;
+
+    transition: opacity 0.5s ease,
+                visibility 0.5s ease;
+}
+
+
+/* Hide Loader */
+
+.website-loader.is-hidden {
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+}
+
+
+/* Loader Content */
+
+.loader-content {
+    text-align: center;
+
+    color: #ffffff;
+}
+
+
+/* Spinner */
+
+.loader-spinner {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    border: 4px solid rgba(255, 255, 255, 0.3);
+
+    border-top-color: #ffffff;
+
+    border-radius: 50%;
+
+    animation: loaderRotate 0.8s linear infinite;
+}
+
+
+/* Loader Text */
+
+.loader-content p {
+    margin: 0;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* Animation */
+
+@keyframes loaderRotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
 
 /* =========================================================
    6. HEADER
 ========================================================= */
+/* =========================================================
+   STICKY HEADER
+========================================================= */
 
 .site-header {
-    position: relative;
+    position: sticky;
+    top: 0;
+    width: 100%;
     z-index: 1000;
-
-    background-color: #ffffff;
-
-    border-bottom: 1px solid #e5e5e5;
+    background: #ffffff;
+    transition:
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
 }
 
+
+/* Header after scrolling */
+
+.site-header.is-scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
 .navbar {
     min-height: 82px;
 
@@ -938,7 +1191,7 @@ section {
 }
 
 .footer-links a:hover {
-    color: #000000;
+    color: #CC297A;
     text-decoration: underline;
 }
 

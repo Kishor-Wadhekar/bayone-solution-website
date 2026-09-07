@@ -9,17 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("BayOne website initialized.");
 
-    /*
-     * ---------------------------------------------------------
-     * Current Year
-     * ---------------------------------------------------------
-     *
-     * If you later add:
-     *
-     * <span data-current-year></span>
-     *
-     * this will automatically update the year.
-     */
 
     const currentYear = document.querySelector("[data-current-year]");
 
@@ -219,6 +208,127 @@ document.addEventListener("click", function (event) {
     }
 
 });
+
+
+/* =========================================================
+   WEBSITE LOADER
+========================================================= */
+
+window.addEventListener("load", function () {
+
+    const websiteLoader =
+        document.querySelector("#websiteLoader");
+
+
+    if (websiteLoader) {
+
+        setTimeout(function () {
+
+            websiteLoader.classList.add("is-hidden");
+
+        }, 500);
+
+    }
+
+});
+
+AOS.init({
+    duration: 800,
+    easing: "ease-out",
+    once: false,
+    offset: 100,
+    mirror: true
+});
+
+
+/* =========================================
+   Back To Top + Scroll Progress
+========================================= */
+
+const backToTop = document.querySelector("#backToTop");
+const progressCircle = document.querySelector("#progressCircle");
+const scrollPercentage = document.querySelector("#scrollPercentage");
+
+if (backToTop && progressCircle && scrollPercentage) {
+
+    const radius = 25;
+    const circumference = 2 * Math.PI * radius;
+
+    progressCircle.style.strokeDasharray = circumference;
+    progressCircle.style.strokeDashoffset = circumference;
+
+    function updateScrollProgress() {
+
+        const scrollTop = window.scrollY;
+
+        const documentHeight =
+            document.documentElement.scrollHeight - window.innerHeight;
+
+        const scrollProgress =
+            documentHeight > 0
+                ? scrollTop / documentHeight
+                : 0;
+
+        const percentage = Math.round(scrollProgress * 100);
+
+        // Update percentage
+        scrollPercentage.textContent = `${percentage}%`;
+
+        // Update circular progress
+        const offset =
+            circumference - (scrollProgress * circumference);
+
+        progressCircle.style.strokeDashoffset = offset;
+
+        // Show button after scrolling
+        if (scrollTop > 200) {
+            backToTop.classList.add("is-visible");
+        } else {
+            backToTop.classList.remove("is-visible");
+        }
+    }
+
+    window.addEventListener(
+        "scroll",
+        updateScrollProgress,
+        { passive: true }
+    );
+
+    updateScrollProgress();
+
+    // Back to top
+    backToTop.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+}
+
+/* =========================================================
+   SMOOTH SCROLL - LENIS
+========================================================= */
+
+const lenis = new Lenis({
+    duration: 1.2,
+    smoothWheel: true,
+    wheelMultiplier: 1,
+    touchMultiplier: 1.5
+});
+
+
+function raf(time) {
+
+    lenis.raf(time);
+
+    requestAnimationFrame(raf);
+
+}
+
+
+requestAnimationFrame(raf);
 
 });
 
