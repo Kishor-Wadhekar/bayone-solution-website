@@ -9,7 +9,8 @@
     <meta name="keywords" content="BayOne, AI, Technology, Digital Transformation">
     <meta name="author" content="BayOne">
     <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self'; frame-src 'self'; form-action 'self'; object-src 'none'; media-src 'self';">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self'; frame-src 'self'; form-action 'self'; object-src 'none'; media-src 'self';">
     <title>BayOne | Technology & Digital Transformation</title>
 
     <!-- Favicon -->
@@ -17,442 +18,362 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/aos.css">
-    
-     <!-- Google Tag Manager -->
+
+    <!-- Google Tag Manager -->
     <!-- GTM script will be added here -->
     <!-- End Google Tag Manager -->
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
     <!-- GTM noscript will be added here -->
     <!-- End Google Tag Manager (noscript) -->
-<!-- Website Loader -->
-<div id="websiteLoader" class="website-loader">
+    <!-- Website Loader -->
+    <div id="websiteLoader" class="website-loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
 
-    <div class="loader-content">
+            <p>Loading...</p>
 
-        <div class="loader-spinner"></div>
-
-        <p>Loading...</p>
+        </div>
 
     </div>
-
-</div>
 
     <!-- =========================================
          HEADER
     ========================================== -->
-<header id="siteHeader" class="site-header">
-    <div class="container">
+    <header id="siteHeader" class="site-header">
+        <div class="container">
 
-        <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg">
 
-            <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
-                    <img src="assets/bayone-logo-dark.png"
-                         alt="BayOne"
-                         class="logo">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/bayone-logo-dark.png" alt="BayOne" class="logo">
                 </a>
 
 
-            <!-- Mobile Menu Button -->
-            <button class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mainNavigation"
-                    aria-controls="mainNavigation"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-
-                <span class="navbar-toggler-icon"></span>
-
-            </button>
-
-
-            <!-- Navigation -->
-            <div class="collapse navbar-collapse" id="mainNavigation">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <!-- Home -->
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">
-                            Home
-                        </a>
-                    </li>
-
-
-                    <!-- Services -->
-                    <li class="nav-item dropdown">
-
-                        <a class="nav-link dropdown-toggle"
-                           href="#"
-                           id="servicesDropdown"
-                           role="button"
-                           data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Services
-                        </a>
-
-                        <ul class="dropdown-menu"
-                            aria-labelledby="servicesDropdown">
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Artificial Intelligence
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Data Engineering
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Experience Design
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Application Modernization
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Quality Engineering
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Site Reliability Engineering
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-
-                    <!-- Industries -->
-                    <li class="nav-item dropdown">
-
-                        <a class="nav-link dropdown-toggle"
-                           href="#"
-                           id="industriesDropdown"
-                           role="button"
-                           data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Industries
-                        </a>
-
-                        <ul class="dropdown-menu"
-                            aria-labelledby="industriesDropdown">
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Financial Services
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Healthcare
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Retail
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Technology
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-
-                    <!-- About Us -->
-                    <li class="nav-item dropdown">
-
-                        <a class="nav-link dropdown-toggle"
-                           href="#"
-                           id="aboutDropdown"
-                           role="button"
-                           data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            About Us
-                        </a>
-
-                        <ul class="dropdown-menu"
-                            aria-labelledby="aboutDropdown">
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    About BayOne
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Leadership
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Our Culture
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-
-                    <!-- Careers -->
-                    <li class="nav-item dropdown">
-
-                        <a class="nav-link dropdown-toggle"
-                           href="#"
-                           id="careersDropdown"
-                           role="button"
-                           data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Careers
-                        </a>
-
-                        <ul class="dropdown-menu"
-                            aria-labelledby="careersDropdown">
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Life at BayOne
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Open Positions
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-
-                    <!-- Insights -->
-                    <li class="nav-item dropdown">
-
-                        <a class="nav-link dropdown-toggle"
-                           href="#"
-                           id="insightsDropdown"
-                           role="button"
-                           data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Insights
-                        </a>
-
-                        <ul class="dropdown-menu"
-                            aria-labelledby="insightsDropdown">
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Blogs
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Case Studies
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    News & Events
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-
-                    <!-- Contact Us -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Contact Us
-                        </a>
-                    </li>
-
-                </ul>
-
-
-                <!-- Search -->
-                <div class="header-search">
-
-                    <button class="search-toggle"
-        type="button"
-        aria-label="Open search"
-        aria-expanded="false">
-
-    <!-- Search Icon -->
-    <svg class="search-icon"
-         xmlns="http://www.w3.org/2000/svg"
-         width="20"
-         height="20"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round"
-         aria-hidden="true">
-
-        <circle cx="11" cy="11" r="7"></circle>
-        <line x1="16.65"
-              y1="16.65"
-              x2="21"
-              y2="21"></line>
-
-    </svg>
-
-
-    <!-- Close Icon -->
-    <svg class="close-icon"
-         xmlns="http://www.w3.org/2000/svg"
-         width="20"
-         height="20"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round"
-         aria-hidden="true">
-
-        <line x1="18"
-              y1="6"
-              x2="6"
-              y2="18"></line>
-
-        <line x1="6"
-              y1="6"
-              x2="18"
-              y2="18"></line>
-
-    </svg>
-
-</button>
-
-
-                    <div class="search-box">
-
-                        <form class="search-form"
-                              id="siteSearchForm">
-
-                            <label for="searchInput"
-                                   class="visually-hidden">
-                                Search website
-                            </label>
-
-                            <input type="search"
-                                   id="searchInput"
-                                   class="search-input"
-                                   placeholder="Search..."
-                                   autocomplete="off">
-
-
-                            <label for="searchType"
-                                   class="visually-hidden">
-                                Search type
-                            </label>
-
-                            <select id="searchType"
-                                    class="search-type">
-
-                                <option value="all">
-                                    All
-                                </option>
-
-                                <option value="services">
-                                    Services
-                                </option>
-
-                                <option value="industries">
-                                    Industries
-                                </option>
-
-                                <option value="about">
-                                    About Us
-                                </option>
-
-                                <option value="careers">
-                                    Careers
-                                </option>
-
-                                <option value="insights">
-                                    Insights
-                                </option>
-
-                            </select>
-
-
-                            <button type="submit"
-                                    class="search-submit"
-                                    aria-label="Submit search">
-
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                     width="18"
-                                     height="18"
-                                     viewBox="0 0 24 24"
-                                     fill="none"
-                                     stroke="currentColor"
-                                     stroke-width="2"
-                                     stroke-linecap="round"
-                                     stroke-linejoin="round">
-
-                                    <circle cx="11" cy="11" r="7"></circle>
-
-                                    <line x1="16.65"
-                                          y1="16.65"
-                                          x2="21"
-                                          y2="21"></line>
-
-                                </svg>
-
-                            </button>
-
-                        </form>
+                <!-- Mobile Menu Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
+                    aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse" id="mainNavigation">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+
+                        <!-- Services -->
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Artificial Intelligence
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Data Engineering
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Experience Design
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Application Modernization
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Quality Engineering
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Site Reliability Engineering
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Industries -->
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="industriesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Industries
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="industriesDropdown">
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Financial Services
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Healthcare
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Retail
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Technology
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- About Us -->
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        About BayOne
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Leadership
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Our Culture
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Careers -->
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Careers
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="careersDropdown">
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Life at BayOne
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Open Positions
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Insights -->
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="insightsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Insights
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="insightsDropdown">
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Blogs
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Case Studies
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        News & Events
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Contact Us -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+                    <!-- Search -->
+                    <div class="header-search">
+
+                        <button class="search-toggle" type="button" aria-label="Open search" aria-expanded="false">
+
+                            <!-- Search Icon -->
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                <circle cx="11" cy="11" r="7"></circle>
+                                <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+
+                            </svg>
+
+
+                            <!-- Close Icon -->
+                            <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+
+                            </svg>
+
+                        </button>
+
+
+                        <div class="search-box">
+
+                            <form class="search-form" id="siteSearchForm">
+
+                                <label for="searchInput" class="visually-hidden">
+                                    Search website
+                                </label>
+
+                                <input type="search" id="searchInput" class="search-input" placeholder="Search..."
+                                    autocomplete="off">
+
+
+                                <label for="searchType" class="visually-hidden">
+                                    Search type
+                                </label>
+
+                                <select id="searchType" class="search-type">
+
+                                    <option value="all">
+                                        All
+                                    </option>
+
+                                    <option value="services">
+                                        Services
+                                    </option>
+
+                                    <option value="industries">
+                                        Industries
+                                    </option>
+
+                                    <option value="about">
+                                        About Us
+                                    </option>
+
+                                    <option value="careers">
+                                        Careers
+                                    </option>
+
+                                    <option value="insights">
+                                        Insights
+                                    </option>
+
+                                </select>
+
+
+                                <button type="submit" class="search-submit" aria-label="Submit search">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+
+                                        <circle cx="11" cy="11" r="7"></circle>
+
+                                        <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+
+                                    </svg>
+
+                                </button>
+
+                            </form>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+            </nav>
 
-        </nav>
+        </div>
 
-    </div>
-
-</header>
+    </header>
 
 
     <main>
@@ -473,7 +394,7 @@
                         </h1>
 
                         <p class="hero-description">
-                           We solve business problems, bridge talent gaps,
+                            We solve business problems, bridge talent gaps,
                             and drive innovation for customers
                         </p>
 
@@ -495,9 +416,8 @@
 
                         <!-- Hero Image / Video -->
                         <div class="hero-media" data-aos="fade-left">
-                            <img src="assets/bayone-about-us-img.jpg"
-                                 alt="BayOne technology solutions"
-                                 class="img-fluid">
+                            <img src="assets/bayone-about-us-img.jpg" alt="BayOne technology solutions"
+                                class="img-fluid">
                         </div>
 
                     </div>
@@ -575,8 +495,7 @@
                         <article class="service-card">
 
                             <div class="service-icon">
-                                <img src="assets/services-icon.png"
-                                     alt="">
+                                <img src="assets/services-icon.png" alt="">
                             </div>
 
                             <h3>Artificial Intelligence</h3>
@@ -601,8 +520,7 @@
                         <article class="service-card">
 
                             <div class="service-icon">
-                                <img src="assets/services-icon.png"
-                                     alt="">
+                                <img src="assets/services-icon.png" alt="">
                             </div>
 
                             <h3>Data Engineering</h3>
@@ -627,8 +545,7 @@
                         <article class="service-card">
 
                             <div class="service-icon">
-                                <img src="assets/services-icon.png"
-                                     alt="">
+                                <img src="assets/services-icon.png" alt="">
                             </div>
 
                             <h3>Experience Design</h3>
@@ -651,9 +568,8 @@
                     <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="service-card">
-                             <div class="service-icon">
-                                <img src="assets/services-icon.png"
-                                     alt="">
+                            <div class="service-icon">
+                                <img src="assets/services-icon.png" alt="">
                             </div>
 
 
@@ -678,9 +594,8 @@
                     <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="service-card">
-                             <div class="service-icon">
-                                <img src="assets/services-icon.png"
-                                     alt="">
+                            <div class="service-icon">
+                                <img src="assets/services-icon.png" alt="">
                             </div>
 
 
@@ -704,9 +619,8 @@
                     <div class="col-md-6 col-lg-4" data-aos="fade-up">
 
                         <article class="service-card">
-                             <div class="service-icon">
-                                <img src="assets/services-icon.png"
-                                     alt="">
+                            <div class="service-icon">
+                                <img src="assets/services-icon.png" alt="">
                             </div>
 
 
@@ -829,8 +743,7 @@
                         <article class="case-study-card">
 
                             <div class="case-study-image">
-                                <img src="assets/case-study-img.jpeg"
-                                     alt="Case study">
+                                <img src="assets/case-study-img.jpeg" alt="Case study">
                             </div>
 
                             <div class="case-study-content">
@@ -862,8 +775,7 @@
                         <article class="case-study-card">
 
                             <div class="case-study-image">
-                                <img src="assets/case-study-img.jpeg"
-                                     alt="Case study">
+                                <img src="assets/case-study-img.jpeg" alt="Case study">
                             </div>
 
                             <div class="case-study-content">
@@ -895,8 +807,7 @@
                         <article class="case-study-card">
 
                             <div class="case-study-image">
-                                <img src="assets/case-study-img.jpeg"
-                                     alt="Case study">
+                                <img src="assets/case-study-img.jpeg" alt="Case study">
                             </div>
 
                             <div class="case-study-content">
@@ -956,8 +867,7 @@
                         <article class="insight-card">
 
                             <div class="insight-image">
-                                <img src="assets/insight-img.jpg"
-                                     alt="">
+                                <img src="assets/insight-img.jpg" alt="">
                             </div>
 
                             <div class="insight-content">
@@ -984,8 +894,7 @@
                         <article class="insight-card">
 
                             <div class="insight-image">
-                                <img src="assets/insight-img.jpg"
-                                     alt="">
+                                <img src="assets/insight-img.jpg" alt="">
                             </div>
 
                             <div class="insight-content">
@@ -1012,8 +921,7 @@
                         <article class="insight-card">
 
                             <div class="insight-image">
-                                <img src="assets/insight-img.jpg"
-                                     alt="">
+                                <img src="assets/insight-img.jpg" alt="">
                             </div>
 
                             <div class="insight-content">
@@ -1076,283 +984,173 @@
     </main>
 
 
-    <!-- =========================================
-         FOOTER
-    ========================================== -->
-    <!-- =========================================
-     FOOTER
-========================================== -->
-<footer class="site-footer">
+    <!-- ========= FOOTER =========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo + Social Media -->
+                <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="assets/bayone-logo-dark.png" alt="BayOne" class="footer-logo">
+                    </a>
+                    <p class="footer-description">
+                        Technology solutions that help businesses transform and grow.
+                    </p>
+                    <!-- Social Media -->
+                    <ul class="social-links" aria-label="Social media links">
+                        <!-- Facebook -->
+                        <li>
+                            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                                <span class="social-icon"> <i class="bi bi-facebook"></i></span>
+                            </a>
+                        </li>
+                        <!-- YouTube -->
+                        <li>
+                            <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                <span class="social-icon"> <i class="bi bi-youtube"></i> </span>
+                            </a>
+                        </li>
+                        <!-- LinkedIn -->
+                        <li>
+                            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <span class="social-icon"> <i class="bi bi-linkedin"></i> </span>
+                            </a>
+                        </li>
+                        <!-- Twitter / X -->
+                        <li>
+                            <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                                <span class="social-icon"> <i class="bi bi-twitter-x"></i> </span>
+                            </a>
+                        </li>
+                        <!-- Instagram -->
+                        <li>
+                            <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                                <span class="social-icon"> <i class="bi bi-instagram"></i> </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Main Navigation -->
+                <div class="col-6 col-lg-2 mb-4 mb-lg-0" data-aos="fade-up">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Industries</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">Insights</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div class="col-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up">
 
-    <div class="container">
+                    <h3>Services</h3>
 
-        <div class="row">
+                    <ul class="footer-links">
 
-            <!-- Logo + Social Media -->
-            <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up">
+                        <li>
+                            <a href="#">Artificial Intelligence</a>
+                        </li>
 
-                <a href="index.html"
-                   class="footer-logo-link">
+                        <li>
+                            <a href="#">Data Engineering</a>
+                        </li>
 
-                    <img src="assets/bayone-logo-dark.png"
-                         alt="BayOne"
-                         class="footer-logo">
+                        <li>
+                            <a href="#">Experience Design</a>
+                        </li>
 
-                </a>
+                        <li>
+                            <a href="#">Application Modernization</a>
+                        </li>
 
+                        <li>
+                            <a href="#">Quality Engineering</a>
+                        </li>
 
-                <p class="footer-description">
-                    Technology solutions that help businesses
-                    transform and grow.
+                    </ul>
+
+                </div>
+                <!-- Contact -->
+                <div class="col-lg-3" data-aos="fade-up">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <a href="mailto:info@bayone.com">
+                                info@bayone.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contact BayOne
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer Bottom Section start here -->
+            <div class="footer-bottom">
+                <p>&copy <span data-current-year></span>
+                    BayOne. All rights reserved.
                 </p>
 
-
-                <!-- Social Media -->
-                <ul class="social-links"
-                    aria-label="Social media links">
-
-                    <!-- Facebook -->
-                    <li>
-                        <a href="#"
-                           aria-label="Facebook"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            <span class="social-icon">
-                                FB
-                            </span>
-
-                        </a>
-                    </li>
-
-
-                    <!-- YouTube -->
-                    <li>
-                        <a href="#"
-                           aria-label="YouTube"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            <span class="social-icon">
-                                YT
-                            </span>
-
-                        </a>
-                    </li>
-
-
-                    <!-- LinkedIn -->
-                    <li>
-                        <a href="#"
-                           aria-label="LinkedIn"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            <span class="social-icon">
-                                in
-                            </span>
-
-                        </a>
-                    </li>
-
-
-                    <!-- Twitter / X -->
-                    <li>
-                        <a href="#"
-                           aria-label="Twitter"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            <span class="social-icon">
-                                X
-                            </span>
-
-                        </a>
-                    </li>
-
-
-                    <!-- Instagram -->
-                    <li>
-                        <a href="#"
-                           aria-label="Instagram"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            <span class="social-icon">
-                                IG
-                            </span>
-
-                        </a>
-                    </li>
-
-                </ul>
-
+                <div class="footer-legal">
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+                    <a href="#">
+                        Terms of Use
+                    </a>
+                    <a href="#">
+                        Cookie Policy
+                    </a>
+                </div>
             </div>
-
-
-            <!-- Main Navigation -->
-            <div class="col-6 col-lg-2 mb-4 mb-lg-0"  data-aos="fade-up">
-
-                <h3>Quick Links</h3>
-
-                <ul class="footer-links">
-
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Industries</a>
-                    </li>
-
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Careers</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Insights</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- Services -->
-            <div class="col-6 col-lg-3 mb-4 mb-lg-0"  data-aos="fade-up">
-
-                <h3>Services</h3>
-
-                <ul class="footer-links">
-
-                    <li>
-                        <a href="#">Artificial Intelligence</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Data Engineering</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Experience Design</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Application Modernization</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Quality Engineering</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- Contact -->
-            <div class="col-lg-3"  data-aos="fade-up">
-
-                <h3>Contact Us</h3>
-
-                <ul class="footer-contact">
-
-                    <li>
-                        <a href="mailto:info@bayone.com">
-                            info@bayone.com
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Contact BayOne
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
         </div>
+    </footer>
+ <!-- Footer main section end here -->   
 
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg class="progress-ring" width="56" height="56" viewBox="0 0 56 56">
+            <circle class="progress-ring-bg" cx="28" cy="28" r="25">
+            </circle>
+            <circle id="progressCircle" class="progress-ring-progress" cx="28" cy="28" r="25">
+            </circle>
+        </svg>
 
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-
-            <p>
-                © <span data-current-year></span>
-                BayOne. All rights reserved.
-            </p>
-
-            <div class="footer-legal">
-
-                <a href="#">
-                    Privacy Policy
-                </a>
-
-                <a href="#">
-                    Terms of Use
-                </a>
-
-                <a href="#">
-                    Cookie Policy
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</footer>
-
-<!-- Back to Top -->
-<button id="backToTop" class="back-to-top" aria-label="Back to top">
-    <svg class="progress-ring" width="56" height="56" viewBox="0 0 56 56">
-        <circle
-            class="progress-ring-bg"
-            cx="28"
-            cy="28"
-            r="25">
-        </circle>
-
-        <circle
-            id="progressCircle"
-            class="progress-ring-progress"
-            cx="28"
-            cy="28"
-            r="25">
-        </circle>
-    </svg>
-
-    <span class="back-to-top-content">
-        <span id="scrollPercentage">0%</span>
-        <span class="back-to-top-arrow">↑</span>
-    </span>
-</button>
+        <span class="back-to-top-content">
+            <span id="scrollPercentage">0%</span>
+            <span class="back-to-top-arrow">↑</span>
+        </span>
+    </button>
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
-     <script src="js/lenis.min.js"></script>
+    <script src="js/lenis.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/components.js"></script>
     <script src="js/tracking.js"></script>
-   <script src="js/aos.js"></script>
-    
+    <script src="js/aos.js"></script>
+
 
 </body>
 
