@@ -41,10 +41,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/aos.css">
-    <!-- Swiper -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <!-- BayOne Swiper Custom CSS -->
-    <link rel="stylesheet" href="css/swiper-custom.css">
 
     <!-- Google Tag Manager -->
     <!-- GTM script will be added here -->
@@ -62,6 +58,8 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#mainContent"> Skip to main content</a>
+
     <!-- Google Tag Manager (noscript) -->
     <!-- GTM noscript will be added here -->
     <!-- End Google Tag Manager (noscript) -->
@@ -116,7 +114,8 @@
 
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="artificial-intelligence.html">Artificial Intelligence </a>
+                                    <a class="dropdown-item" href="artificial-intelligence.html"> Artificial
+                                        Intelligence </a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="data-engineering.html">Data Engineering </a>
@@ -124,24 +123,7 @@
                                 <li>
                                     <a class="dropdown-item" href="experience-design.html">Experience Design </a>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="application-modernizationn.html">Application Modernization </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="site-reliability.html">Site Reliability </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="technical-support-and-business-operations.html">Technical Support and Business Operations </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="pmo-services.html">PMO Services </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="quality-engineering.html">Quality Engineering</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="talent-solutions.html">Talent Solutions </a>
-                                </li>
+
                             </ul>
                         </li>
 
@@ -156,36 +138,24 @@
 
                             <ul class="dropdown-menu" aria-labelledby="industriesDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="technology.html">Technology</a>
+                                    <a class="dropdown-item" href="javascript:void(0)"> Financial Services</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="retail.html">Retail</a>
+                                    <a class="dropdown-item" href="javascript:void(0)"> Healthcare </a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="healthcare.html"> Healthcare </a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Retail</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="life-sciences.html"> Life Sciences</a>
-                                </li>
-                                 <li>
-                                    <a class="dropdown-item" href="automotive.html"> Automotive</a>
-                                </li>
-                                 <li>
-                                    <a class="dropdown-item" href="financial.html">Financial</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="telecommunications.html">Telecommunications</a>
+                                    <a class="dropdown-item" href="javascript:void(0)"> Technology</a>
                                 </li>
                             </ul>
                         </li>
 
                         <!-- About Us -->
                         <li class="nav-item dropdown">
-                              <a class="nav-link" href="about-us.html">About Us </a>
-                            <button class="nav-dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" aria-label="Open About Us menu">
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="aboutDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
                             <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                                 <li>
                                     <a class="dropdown-item" href="javascript:void(0)">About BayOne</a>
@@ -195,22 +165,16 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="diversity.html">Diversity</a>
-                                </li>
-                                <li>
                                     <a class="dropdown-item" href="javascript:void(0)"> Our Culture</a>
                                 </li>
-                                
                             </ul>
                         </li>
 
                         <!-- Careers -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="careers.html">Careers </a>
-                            <button class="nav-dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" aria-label="Open About Us menu">
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="careersDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Careers</a>
+
                             <ul class="dropdown-menu" aria-labelledby="careersDropdown">
                                 <li>
                                     <a class="dropdown-item" href="javascript:void(0)"> Life at BayOne </a>
@@ -222,11 +186,9 @@
                         </li>
                         <!-- Insights -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="insights.html">Insights </a>
-                            <button class="nav-dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" aria-label="Open Insights menu">
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="insightsDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Insights</a>
+
                             <ul class="dropdown-menu" aria-labelledby="insightsDropdown">
                                 <li>
                                     <a class="dropdown-item" href="javascript:void(0)">Blogs</a>
@@ -340,188 +302,112 @@
             </div>
         </section>
 
-  <!-- ========= SERVICES SECTION Start Here ================ -->
-<section class="services-section">
-    <div class="container">
-
-        <!-- Section Heading -->
-        <div class="section-heading text-center" data-aos="fade-up">
-            <p class="section-eyebrow">Our Services</p>
-            <h2>Transforming businesses through technology</h2>
-            <p>Explore our technology capabilities and solutions.</p>
-        </div>
-
-        <!-- Services Slider Wrapper -->
-        <div class="services-slider-wrapper" data-aos="fade-up">
-            <!-- Previous Button -->
-            <button class="services-slider-prev" type="button" aria-label="Previous service">
-                <i class="bi bi-arrow-left"></i>
-            </button>
-            <!-- Swiper -->
-            <div class="swiper services-slider">
-                <div class="swiper-wrapper">
-                    <!-- Service 01 -->
-                    <div class="swiper-slide">
+        <!-- =========  SERVICES SECTION Start Here ================ -->
+        <section class="services-section">
+            <div class="container">
+                <div class="section-heading text-center" data-aos="fade-up">
+                    <p class="section-eyebrow">Our Services</p>
+                    <h2> Transforming businesses through technology</h2>
+                    <p>Explore our technology capabilities and solutions.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Service -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
                         <article class="service-card">
-                            <div class="service-icon pinkbgcircle">
-                                <img src="assets/services-icon-01.png" alt="Artificial Intelligence" loading="lazy">
+                            <div class="service-icon">
+                                <img src="assets/services-icon.png" alt="Artificial Intelligenc" loading="lazy">
                             </div>
                             <h3>Artificial Intelligence</h3>
                             <p>
-                                Artificial Intelligence transforms potential into power.
-                                We partner with you to unlock AI's capabilities—optimizing
-                                operations, enhancing decision-making, and revolutionizing
-                                customer experiences.
+                                Artificial Intelligence transforms potential into power. We partner with you to
+                                unlock AI's capabilities—optimizing operations, enhancing decision-making,
+                                and revolutionizing customer experiences.
                             </p>
-                            <a href="artificial-intelligence.html"> Explore Service <span aria-hidden="true">→</span> </a>
+                            <a href="javascript:void(0)"> Explore Service → </a>
                         </article>
                     </div>
 
-                    <!-- Service 02 -->
-                    <div class="swiper-slide">
+                    <!-- Service -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
                         <article class="service-card">
-                            <div class="service-icon pinkbgcircle">
-                                <img src="assets/services-icon-02.png" alt="Data Engineering" loading="lazy" >
+                            <div class="service-icon">
+                                <img src="assets/services-icon.png" alt="Data Engineering" loading="lazy">
                             </div>
                             <h3>Data Engineering</h3>
                             <p>
-                                In an AI-first economy, data is only as valuable as your
-                                ability to structure, trust, and activate it. BayOne helps
-                                organizations turn fragmented data into a trusted growth
-                                asset that powers.
+                                In an AI-first economy, data is only as valuable as your ability
+                                to structure, trust, and activate it. BayOne helps organizations
+                                turn fragmented data into a trusted growth asset that
+                                powers faster insights and smarter outcomes.
                             </p>
-                            <a href="data-engineering.html">Explore Service  <span aria-hidden="true">→</span> </a>
+                            <a href="javascript:void(0)">
+                                Explore Service →
+                            </a>
                         </article>
                     </div>
-
-                    <!-- Service 03 -->
-                    <div class="swiper-slide">
+                    <!-- Service -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
                         <article class="service-card">
-                            <div class="service-icon pinkbgcircle">
-                                <img src="assets/services-icon-03.png" alt="Experience Design" loading="lazy">
+                            <div class="service-icon">
+                                <img src="assets/services-icon.png" alt="Experience Design" loading="lazy">
                             </div>
                             <h3>Experience Design</h3>
                             <p>
-                                Our human-centered approach prioritizes usability and
-                                seamless experiences, helping businesses connect with users
-                                while driving efficiency and brand loyalty.
+                                Our human-centered approach prioritizes usability and seamless
+                                experiences, helping businesses connect with users while driving
+                                efficiency and brand loyalty. With expertise in
+                                platform-specific design, experience strategy.
                             </p>
-                            <a href="experience-design.html"> Explore Service  <span aria-hidden="true">→</span> </a>
+                            <a href="javascript:void(0)"> Explore Service → </a>
                         </article>
                     </div>
-
-                    <!-- Service 04 -->
-                    <div class="swiper-slide">
+                    <!-- Service -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
                         <article class="service-card">
-                            <div class="service-icon darkpinkbgcircle">
-                                <img src="assets/services-icon-04.png" alt="Application Modernization" loading="lazy">
+                            <div class="service-icon">
+                                <img src="assets/services-icon.png" alt="Application Modernization" loading="lazy">
                             </div>
                             <h3>Application Modernization</h3>
                             <p>
-                                Turn outdated systems into drivers of growth and innovation.
-                                Transition to scalable and secure applications that help
-                                businesses adapt quickly and deliver better experiences.
+                                Modernize applications and technology platforms
+                                for scalability and agility.
                             </p>
-                            <a href="application-modernization.html">Explore Service <span aria-hidden="true">→</span> </a>
+                            <a href="javascript:void(0)"> Explore Service →</a>
                         </article>
                     </div>
-
-                    <!-- Service 05 -->
-                    <div class="swiper-slide">
+                    <!-- Service -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
                         <article class="service-card">
-                            <div class="service-icon darkpinkbgcircle">
-                                <img src="assets/services-icon-05.png" alt="Site Reliability Engineering" loading="lazy">
-                            </div>
-                            <h3>Site Reliability Engineering</h3>
-                            <p>
-                                Boost reliability, performance, and scalability with
-                                BayOne's Site Reliability Engineering solutions through
-                                proactive monitoring and support.
-                            </p>
-                            <a href="site-reliability.html">Explore Service <span aria-hidden="true">→</span> </a>
-                        </article>
-                    </div>
-
-                    <!-- Service 06 -->
-                    <div class="swiper-slide">
-                        <article class="service-card">
-                            <div class="service-icon darkpinkbgcircle">
-                                <img src="assets/services-icon-06.png" alt="Tech and Business Operations Support" loading="lazy">
-                            </div>
-                            <h3>Tech and Business Operations Support</h3>
-                            <p>
-                               Maximizing the value of your systems and applications 
-                               is essential in today's competitive landscape. BayOne 
-                               simplifies the challenge with expert application and business 
-                               operations services.
-                            </p>
-                            <a href="tech-and-business-operations-support.html"> Explore Service <span aria-hidden="true">→</span>
-                            </a>
-                        </article>
-                    </div>
-
-                    <!-- Service 07 -->
-                    <div class="swiper-slide">
-                        <article class="service-card">
-                            <div class="service-icon purplebgcircle">
-                                <img src="assets/services-icon-07.png" alt="PMO Services" loading="lazy">
-                            </div>
-                            <h3>PMO Services</h3>
-                            <p>
-                                Our Project, Program, and Product Management 
-                                services empower businesses to innovate, align strategies, 
-                                and achieve success. We provide tailored, BayOne's 
-                                Project, Program, and Product Management services
-                            </p>
-                            <a href="pmo-services.html"> Explore Service <span aria-hidden="true">→</span>
-                            </a>
-                        </article>
-                    </div>
-
-                    <!-- Service 08 -->
-                    <div class="swiper-slide">
-                        <article class="service-card">
-                            <div class="service-icon purplebgcircle">
-                                <img src="assets/services-icon-08.png" alt="Quality Engineering" loading="lazy">
+                            <div class="service-icon">
+                                <img src="assets/services-icon.png" alt="Quality Engineering" loading="lazy">
                             </div>
                             <h3>Quality Engineering</h3>
                             <p>
-                                We approach quality assurance with innovation and precision,
-                                ensuring your business delivers seamless and reliable
-                                experiences through tailored solutions into your systems.
+                                Deliver reliable and high-quality digital
+                                products through modern engineering practices.
                             </p>
-                            <a href="quality-engineering.html"> Explore Service <span aria-hidden="true">→</span>
-                            </a>
+                            <a href="javascript:void(0)">Explore Service →</a>
                         </article>
                     </div>
-                     <!-- Service 09 -->
-                    <div class="swiper-slide">
+                    <!-- Service -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
                         <article class="service-card">
-                            <div class="service-icon purplebgcircle">
-                                <img src="assets/services-icon-09.png" alt="Talent Solutions" loading="lazy">
+                            <div class="service-icon">
+                                <img src="assets/services-icon.png" alt="Site Reliability Engineering" loading="lazy">
                             </div>
-                            <h3>Talent Solutions</h3>
+                            <h3>Site Reliability Engineering</h3>
                             <p>
-                                We deliver tailored talent solutions that drive 
-                                business success. From permanent and contract staffing
-                                 to contingent workforce transformation, our scalable, data-driven 
-                                approaches ensure the right talent at the right time. 
+                                Build scalable, reliable and resilient digital
+                                platforms.
                             </p>
-                            <a href="talent-solutions.html"> Explore Service <span aria-hidden="true">→</span>
-                            </a>
+                            <a href="javascript:void(0)"> Explore Service → </a>
                         </article>
                     </div>
-                    <!-- Services Slider Card End Here -->
                 </div>
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
             </div>
-            <!-- Next Button -->
-            <button class="services-slider-next" type="button" aria-label="Next service"><i class="bi bi-arrow-right"></i> </button>
-        </div>
-    </div>
-</section>
-<!-- ========= SERVICES SECTION End Here ================== -->
+        </section>
+
+        <!-- =========  SERVICES SECTION End Here ================ -->
 
         <!-- ============== INDUSTRIES SECTION Start Here ================= -->
         <section class="industries-section">
@@ -559,135 +445,72 @@
 
         <!-- =========  INDUSTRIES SECTION End  Here  ============== -->
 
-      <!-- =========== CASE STUDIES SECTION Start Here =============== -->
-<section class="case-studies-section">
-    <div class="container">
-        <!-- Section Heading -->
-        <div class="section-heading text-center" data-aos="fade-up">
-            <p class="section-eyebrow">Case Studies</p>
-            <h2>Turning technology into business outcomes.</h2>
-        </div>
-
-        <!-- Case Study Slider Wrapper -->
-        <div class="case-study-slider-wrapper" data-aos="fade-up">
-            <!-- Previous Button -->
-            <button class="case-study-slider-prev" type="button"  aria-label="Previous case study"><i class="bi bi-arrow-left"></i> </button>
-            <!-- Swiper -->
-            <div class="swiper bayone-card-slider case-study-slider">
-                <div class="swiper-wrapper">
-                    <!-- Case Study 01 -->
-                    <div class="swiper-slide">
-                        <article class="case-study-card">
-                            <div class="case-study-image">
-                                <img src="assets/case-study-img.jpeg" alt="Experience and Digital" loading="lazy">
-                                <span class="category-study">  Experience and Digital  </span>
-                            </div>
-                            <div class="case-study-content">
-                                <h3>Inclusive Innovation: Enhancing Accessibility Across the Product Suite</h3>
-                                <p>
-                                    Inclusive research delivering 20+ accessibility refinements across the suite.
-                                </p>
-                                <a href="javascript:void(0)"> Read Case Study <span aria-hidden="true">→</span></a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Case Study 02 -->
-                    <div class="swiper-slide">
-                        <article class="case-study-card">
-                            <div class="case-study-image">
-                                <img src="assets/case-study-img.jpeg" alt="Experience and Digital" loading="lazy">
-                                 <span class="category-study">Experience and Digital</span>
-                            </div>
-                            <div class="case-study-content">
-                                <h3> Optimizing the Global Consumer Device Experience Across Product Lines</h3>
-                                <p>
-                                   Design ops for a global hardware maker; 15% to 25% faster iteration cycles.
-                                </p>
-                                <a href="javascript:void(0)"> Read Case Study <span aria-hidden="true">→</span> </a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Case Study 03 -->
-                    <div class="swiper-slide">
-                        <article class="case-study-card">
-                            <div class="case-study-image">
-                                <img src="assets/case-study-img.jpeg" alt=" Product Engineering" loading="lazy">
-                             <span class="category-study"> Product Engineering</span>
-                            </div>
-                            <div class="case-study-content">
-                                <h3>Product Management for the Enterprise Networking and Telecom Portfolio</h3>
-                                <p>
-                                    Embedded product management that earned CEO recognition for excellence.
-                                </p>
-                                <a href="javascript:void(0)"> Read Case Study <span aria-hidden="true">→</span> </a>
-                            </div>
-                        </article>
-                    </div>
-                   <!-- Case Study 04 -->
-                    <div class="swiper-slide">
-                        <article class="case-study-card">
-                            <div class="case-study-image">
-                                <img src="assets/case-study-img.jpeg" alt="Cloud and Platform Engineering" loading="lazy">
-                                <span class="category-study">  Cloud and Platform Engineering </span>
-                            </div>
-                            <div class="case-study-content">
-                                <h3>FIPS-Compliant SBOM Automation for an Enterprise Platform Release</h3>
-                                <p>
-                                  Automated SBOM pipeline that met the FIPS 140-2 compliance standard.
-                                </p>
-                                <a href="javascript:void(0)"> Read Case Study <span aria-hidden="true">→</span></a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Case Study 05 -->
-                    <div class="swiper-slide">
-                        <article class="case-study-card">
-                            <div class="case-study-image">
-                                <img src="assets/case-study-img.jpeg" alt="Experience and Digital" loading="lazy">
-                                 <span class="category-study">Experience and Digital</span>
-                            </div>
-                            <div class="case-study-content">
-                                <h3> Accelerating UX Validation Through a Rapid Prototyping Practice </h3>
-                                <p>
-                                   Rapid prototyping practice that cut design validation cycles by 30% to 40%.
-                                </p>
-                                <a href="javascript:void(0)"> Read Case Study <span aria-hidden="true">→</span> </a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Case Study 06 -->
-                    <div class="swiper-slide">
-                        <article class="case-study-card">
-                            <div class="case-study-image">
-                                <img src="assets/case-study-img.jpeg" alt="Data and Analytics" loading="lazy">
-                             <span class="category-study"> Data and Analytics</span>
-                            </div>
-                            <div class="case-study-content">
-                                <h3>Visualizing Research Insights to Enable Faster Product Decisions</h3>
-                                <p>
-                                  Insight visualization cutting time to access research findings by half.
-                                </p>
-                                <a href="javascript:void(0)"> Read Case Study <span aria-hidden="true">→</span> </a>
-                            </div>
-                        </article>
-                    </div>
-                    <!-- Case Study Slider Item Close Here -->
+        <!-- ===========  CASE STUDIES SECTION Start Here =============== -->
+        <section class="case-studies-section">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <p class="section-eyebrow"> Case Studies </p>
+                    <h2> Turning technology into business outcomes. </h2>
                 </div>
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <article class="case-study-card">
+                            <div class="case-study-image">
+                                <img src="assets/case-study-img.jpeg" alt="Data Analytics Transformation"
+                                    loading="lazy">
+                                <span class="category-study">Data & Analytics</span>
+                            </div>
+                            <div class="case-study-content">
+                                <h3>Data Analytics Transformation </h3>
+                                <p>
+                                    Discover how technology helped improve
+                                    business performance.
+                                </p>
+                                <a href="javascript:void(0)"> Read Case Study →</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <article class="case-study-card">
+                            <div class="case-study-image">
+                                <img src="assets/case-study-img.jpeg" alt="AI & Machine Learning Modernization"
+                                    loading="lazy">
+                                <span class="category-study">AI & ML</span>
+                            </div>
+                            <div class="case-study-content">
+                                <h3> AI & Machine Learning Modernization</h3>
+                                <p>
+                                    Building scalable and intelligent
+                                    technology solutions.
+                                </p>
+                                <a href="javascript:void(0)"> Read Case Study → </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <article class="case-study-card">
+                            <div class="case-study-image">
+                                <img src="assets/case-study-img.jpeg" alt="Workforce Transformationy" loading="lazy">
+                                <span class="category-study">Digital Transformation</span>
+                            </div>
+                            <div class="case-study-content">
+                                <h3>Workforce Transformation</h3>
+                                <p>
+                                    Helping organizations create better
+                                    digital experiences.
+                                </p>
+                                <a href="javascript:void(0)">Read Case Study → </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Next Button -->
-            <button class="case-study-slider-next" type="button" aria-label="Next case study"><i class="bi bi-arrow-right"></i></button>
-
-        </div>
-    </div>
-</section>
-<!-- =========== CASE STUDIES SECTION End Here =============== -->
+        <!-- ===========  CASE STUDIES SECTION End Here =============== -->
 
 
         <!-- ============= INSIGHTS SECTION  ================ -->
@@ -918,11 +741,10 @@
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
+
     <!-- Custom JS -->
     <script src="js/lenis.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/swiper-custom.js"></script>
     <script src="js/components.js"></script>
     <script src="js/tracking.js"></script>
     <script src="js/aos.js"></script>

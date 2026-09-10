@@ -1,0 +1,269 @@
+/* ================= BAYONE SWIPER ===================== */
+/* =============== COMMON SLIDER ================= */
+.bayone-card-slider {
+    position: relative;
+    overflow: hidden;
+}
+.bayone-card-slider .swiper-wrapper {
+    align-items: stretch;
+}
+.bayone-card-slider .swiper-slide {
+    height: auto;
+    display: flex;
+}
+/* =============== CARD ================= */
+.case-study-card,
+.service-card,
+.insight-card {
+    width: 100%;
+    height: 100%;
+}
+/* ============ SERVICES SLIDER LAYOUT =============== */
+.services-slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+/* Swiper */
+.services-slider {
+    width: 100%;
+    overflow: hidden;
+}
+.services-slider .swiper-wrapper {
+    align-items: stretch;
+}
+.services-slider .swiper-slide {
+    height: auto;
+    display: flex;
+}
+.services-slider .service-card {
+    width: 100%;
+    height: 100%;
+}
+/* =========== SERVICES SLIDER NAVIGATION ================== */
+.services-slider-prev,
+.services-slider-next {
+    position: absolute;
+    top: 50%;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg,#8635e9, #f3197a, #844190
+    );
+    background-size: 200% 200%;
+    box-shadow: 0 8px 25px rgba(78, 66, 190, 0.25);
+    transition:transform 0.3s ease, box-shadow 0.3s ease, background-position 0.5s ease;
+}
+/* Previous Button */
+.services-slider-prev {
+    left: -75px;
+}
+/* Next Button */
+.services-slider-next {
+    right: -75px;
+}
+/* ============= SERVICES BUTTON HOVER ANIMATION ================ */
+.services-slider-prev:hover,
+.services-slider-next:hover {
+    background-position: 100% 50%;
+    transform:
+        translateY(-50%)
+        scale(1);
+    box-shadow:0 12px 30px rgba(78, 66, 190, 0.4);
+}
+/* Arrow Animation */
+.services-slider-prev i,
+.services-slider-next i {
+    transition: transform 0.3s ease;
+}
+.services-slider-prev:hover i {
+    transform: translateX(-4px);
+}
+.services-slider-next:hover i {
+    transform: translateX(4px);
+}
+/* =============== PAGINATION ================== */
+.swiper .swiper-pagination {
+    position: relative;
+    bottom: auto;
+    margin-top: 35px;
+    display: none;
+}
+.swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    background-color: var(--bg-circle-purple);
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    width: 24px;
+    border-radius: 10px;
+    opacity: 1;
+    background-color: var(--bg-circle-pink);
+}
+/* ============= DISABLED BUTTON ================ */
+.services-slider-prev.swiper-button-disabled,
+.services-slider-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+/* =================  RESPONSIVE - LARGE TABLET ============== */
+@media (max-width: 1199.98px) {
+    .services-slider-prev {
+        left: -60px;
+    }
+    .services-slider-next {
+        right: -60px;
+    }
+}
+/* =========== RESPONSIVE - TABLET ============= */
+@media (max-width: 991.98px) {
+    .services-slider-wrapper {
+        padding: 0 50px;
+    }
+    .services-slider-prev {
+        left: 0;
+    }
+    .services-slider-next {
+        right: 0;
+    }
+}
+/* ========= RESPONSIVE - MOBILE =========== */
+@media (max-width: 767.98px) {
+    .services-slider-wrapper {
+        padding: 0;
+    }
+    .services-slider-prev,
+    .services-slider-next {
+        display: none;
+    }
+    .bayone-card-slider .swiper-pagination {
+        margin-top: 25px;
+    }
+   
+}
+
+/** SERVICES SLIDER CSS END HERE **/
+
+/* =========== CASE STUDY SLIDER LAYOUT ============= */
+.case-study-slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.case-study-slider {
+    width: 100%;
+    overflow: hidden;
+}
+.case-study-slider .swiper-wrapper {
+    align-items: stretch;
+}
+.case-study-slider .swiper-slide {
+    height: auto;
+    display: flex;
+}
+.case-study-slider .case-study-card {
+    width: 100%;
+    height: 100%;
+}
+/* ============  CASE STUDY SLIDER NAVIGATION =================== */
+
+.case-study-slider-prev,
+.case-study-slider-next {
+   position: absolute;
+    top: 50%;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg,#8635e9, #f3197a, #844190
+    );
+    background-size: 200% 200%;
+    box-shadow: 0 8px 25px rgba(78, 66, 190, 0.25);
+    transition:transform 0.3s ease, box-shadow 0.3s ease, background-position 0.5s ease;
+}
+.case-study-slider-prev {
+    left: -75px;
+}
+.case-study-slider-next {
+    right: -75px;
+}
+/* =========== CASE STUDY BUTTON HOVER =============== */
+.case-study-slider-prev:hover,
+.case-study-slider-next:hover {
+    background-position: 100% 50%;
+    transform:translateY(-50%) scale(1);
+    box-shadow:0 12px 30px rgba(78, 66, 190, 0.4);
+}
+.case-study-slider-prev i,
+.case-study-slider-next i {
+    transition: transform 0.3s ease;
+}
+.case-study-slider-prev:hover i {
+    transform: translateX(-4px);
+}
+.case-study-slider-next:hover i {
+    transform: translateX(4px);
+}
+/* ===========  CASE STUDY DISABLED BUTTON ============= */
+.case-study-slider-prev.swiper-button-disabled,
+.case-study-slider-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+/* ========= CASE STUDY RESPONSIVE ============== */
+@media (max-width: 1199.98px) {
+    .case-study-slider-prev {
+        left: -60px;
+    }
+    .case-study-slider-next {
+        right: -60px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .case-study-slider-wrapper {
+        padding: 0 50px;
+    }
+    .case-study-slider-prev {
+        left: 0;
+    }
+    .case-study-slider-next {
+        right: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .case-study-slider-wrapper {
+        padding: 0;
+    }
+    .case-study-slider-prev,
+    .case-study-slider-next {
+        display: none;
+    }
+    .swiper .swiper-pagination {
+    margin-top: 15px;
+    display: block;
+}
+}
+/** CASE STUDY SLIDER CSS END HERE **/
