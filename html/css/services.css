@@ -1,0 +1,628 @@
+/* ============== COMMON CSS ============ */
+.services-hero-section,
+.services-video-section {
+    position: relative;
+    overflow: hidden;
+}
+.section-padding {
+    padding: 60px 0;
+}
+.section-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--bayone-primary);
+}
+.section-heading {
+    max-width: 800px;
+    margin: 0 auto 55px;
+}
+.section-heading h2,
+.services-overview-content h2,
+.brochure-content h2 {
+    margin-bottom: 20px;
+    color: var(--bayone-dark);
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    font-weight: 700;
+}
+.section-description {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--bayone-text);
+    line-height: 1.8;
+}
+
+/* ========= HERO SECTION CSS START HERE ============= */
+.services-hero-section {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background-image:
+        url("https://bayone.com/wp-content/uploads/2025/02/Services_revised-mockup-1-scaled.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 10, 20, 0.92) 0%,
+            rgba(10, 10, 20, 0.72) 45%,
+            rgba(10, 10, 20, 0.1) 100%
+        );
+}
+.services-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    padding: 100px 0;
+}
+
+.services-hero-content h1 {
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.08;
+    font-weight: 800;
+}
+.services-hero-content h1 span {
+    color: var(--bayone-primary);
+}
+.services-hero-content p {
+    max-width: 720px;
+    margin-bottom: 35px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 18px;
+    line-height: 1.8;
+}
+.bayone-btn {
+    padding: 14px 25px;
+    border: 0;
+    border-radius: 5px;
+    background: linear-gradient(
+        90deg,
+        var(--bayone-primary),
+        var(--bayone-secondary)
+    );
+    color: #ffffff;
+    font-weight: 600;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+.bayone-btn:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow:
+        0 12px 30px rgba(204, 41, 122, 0.25);
+}
+.btn-arrow {
+    margin-left: 10px;
+}
+
+/* ========== OVERVIEW ================= */
+.services-overview-section {
+    background: #ffffff;
+}
+.services-overview-content {
+    max-width: 600px;
+}
+.services-overview-content p {
+    margin-bottom: 20px;
+    color: var(--bayone-text);
+    line-height: 1.8;
+}
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+.text-link span {
+    transition: transform 0.3s ease;
+}
+.text-link:hover {
+    color: var(--primary-dark);
+}
+.text-link:hover span {
+    transform: translateX(5px);
+}
+.services-overview-image {
+    position: relative;
+}
+.services-overview-image img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+.overview-image-badge {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 22px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.15);
+}
+.overview-image-badge strong {
+    color: var(--bayone-secondary);
+}
+.overview-image-badge span {
+    margin-top: 4px;
+    color: #666;
+    font-size: 13px;
+}
+/* =========== SERVICES SLIDER ============== */
+.services-slider-section {
+    background-color: #f1f1f1;
+}
+
+/* ===========  VIDEO SECTION ================== */
+.services-video-section {
+    min-height: 700px;
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+}
+.services-background-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.services-video-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(20, 10, 25, 0.88),
+            rgba(70, 20, 70, 0.70)
+        );
+}
+.services-video-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin-bottom: 55px;
+}
+.services-video-content .section-eyebrow {
+    color: #ffffff;
+}
+.services-video-content h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: clamp(35px, 5vw, 58px);
+    line-height: 1.15;
+}
+.services-video-content p {
+    max-width: 700px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 18px;
+    line-height: 1.8;
+}
+.services-video-highlights {
+    position: relative;
+    z-index: 2;
+}
+.video-highlight-box {
+    height: 100%;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+.video-highlight-box:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.13);
+}
+.highlight-number {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--bayone-primary);
+    font-weight: 700;
+}
+.video-highlight-box h3 {
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-size: 25px;
+}
+.video-highlight-box p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.7;
+}
+/* ========= WHY BAYONE ========= */
+.why-bayone-section {
+    background: #ffffff;
+}
+.why-bayone-grid {
+    margin-top: 10px;
+}
+.why-bayone-card {
+    height: 100%;
+    padding: 35px;
+    border: 1px solid var(--bayone-border);
+    border-radius: 14px;
+    background: #ffffff;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+.why-bayone-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.08);
+}
+.why-card-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(204, 41, 122, 0.10),
+            rgba(132, 65, 144, 0.10)
+        );
+}
+
+.why-card-icon img {
+    width: 30px;
+    height: 30px;
+}
+.why-bayone-card h3 {
+    margin-bottom: 12px;
+    color: var(--bayone-dark);
+    font-size: 22px;
+}
+.why-bayone-card p {
+    margin: 0;
+    color: var(--bayone-text);
+    line-height: 1.7;
+}
+/* ===== DOWNLOAD BROCHURE =============== */
+.download-brochure-section {
+    background:
+        linear-gradient(
+            135deg,
+            #f8f5f8 0%,
+            #ffffff 60%
+        );
+}
+
+.brochure-content {
+    max-width: 550px;
+}
+
+.brochure-content p {
+    margin-bottom: 30px;
+    color: var(--bayone-text);
+    line-height: 1.8;
+}
+.brochure-preview {
+    max-width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.12);
+}
+.brochure-preview img {
+    display: block;
+    width: 100%;
+}
+
+/* ==========  FORM ============== */
+.brochure-form-wrapper {
+    padding:20px;
+    border: 1px solid rgba(132, 65, 144, 0.15);
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.08);
+}
+.form-heading {
+    margin-bottom: 30px;
+}
+.form-heading h3 {
+    margin-bottom: 8px;
+    color: var(--bayone-dark);
+    font-size: 30px;
+}
+.form-heading p {
+    margin: 0;
+    color: var(--bayone-text);
+}
+
+.form-field {
+    position: relative;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-field label span,
+.form-consent label span {
+    color: var(--bayone-primary);
+}
+.form-control,
+.form-select {
+    min-height: 40px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-shadow: none;
+}
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--bayone-primary);
+    box-shadow:
+        0 0 0 3px rgba(204, 41, 122, 0.08);
+}
+.phone-input-group {
+    display: flex;
+    gap: 8px;
+}
+.country-selector {
+    width: 160px;
+    flex-shrink: 0;
+}
+.form-error {
+    display: none;
+    margin-top: 6px;
+    color: #d12c2c;
+    font-size: 12px;
+}
+.form-field.has-error .form-control,
+.form-field.has-error .form-select {
+    border-color: #d12c2c;
+}
+
+.form-field.has-error .form-error {
+    display: block;
+}
+
+.form-privacy {
+    margin-top: 25px;
+    color: #6b6b6b;
+    font-size: 12px;
+    line-height: 1.7;
+}
+.form-privacy a {
+    color: var(--bayone-primary);
+    font-weight: 600;
+}
+
+.form-consent {
+    margin-top: 20px;
+}
+
+.form-check-input {
+    margin-top: 3px;
+}
+
+.form-check-input:checked {
+    border-color: var(--bayone-primary);
+    background-color: var(--bayone-primary);
+    appearance: auto;
+}
+
+.form-check-label {
+    color: #555555;
+    font-size: 13px;
+}
+
+.form-submit {
+    margin-top: 30px;
+}
+
+.bayone-submit-btn {
+    min-width: 190px;
+    min-height: 50px;
+    padding: 12px 25px;
+    border: 0;
+    border-radius: 6px;
+    background:
+        linear-gradient(
+            90deg,
+            var(--bayone-primary),
+            var(--bayone-secondary)
+        );
+    color: #ffffff;
+    font-weight: 600;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.bayone-submit-btn:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow:
+        0 10px 25px rgba(204, 41, 122, 0.25);
+}
+.bayone-submit-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+    transform: none;
+}
+.button-loader {
+    display: none;
+}
+
+.bayone-submit-btn.is-loading .button-text {
+    display: none;
+}
+
+.bayone-submit-btn.is-loading .button-loader {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-response {
+    display: none;
+    margin-top: 20px;
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.form-success {
+    border: 1px solid #b7dfc0;
+    background: #effaf1;
+    color: #236b32;
+}
+.form-failure {
+    border: 1px solid #e9bcbc;
+    background: #fff1f1;
+    color: #a52626;
+}
+
+/* =========================================================
+   INTERNATIONAL TELEPHONE INPUT
+========================================================= */
+
+.iti {
+    width: 100%;
+}
+
+.iti__tel-input,
+.iti input[type="tel"] {
+    width: 100%;
+}
+
+.iti__selected-dial-code {
+    color: #333333;
+    font-size: 14px;
+}
+
+.iti__country-list {
+    z-index: 9999;
+}
+
+.iti__country {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.iti__country-name {
+    font-size: 14px;
+}
+
+.iti__dial-code {
+    color: #777777;
+}
+
+.form-field.has-error .iti input {
+    border-color: #d12c2c;
+}
+
+/* ========== RESPONSIVE =============== */
+
+@media (max-width: 991px) {
+    .section-padding {
+        padding: 75px 0;
+    }
+    .services-hero-section {
+        min-height: 580px;
+    }
+    .services-overview-image {
+        margin-top: 20px;
+    }
+    .services-video-section {
+        padding: 90px 0;
+    }
+    .brochure-form-wrapper {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+    .services-hero-section {
+        min-height: 600px;
+    }
+    .services-hero-content {
+        padding: 70px 0;
+    }
+    .services-hero-content h1 {
+        font-size: 42px;
+    }
+    .services-hero-content p {
+        font-size: 16px;
+    }
+    .service-card {
+        min-height: 330px;
+        padding: 28px;
+    }
+    .services-slider-controls {
+        gap: 15px;
+    }
+    .services-video-section {
+        min-height: auto;
+        padding: 75px 0;
+    }
+    .video-highlight-box {
+        padding: 25px;
+    }
+    .brochure-form-wrapper {
+        padding: 25px 20px;
+    }
+    .form-heading h3 {
+        font-size: 25px;
+    }
+    .phone-input-group {
+        flex-direction: column;
+    }
+    .country-selector {
+        width: 100%;
+    }
+       .iti {
+        width: 100%;
+    }
+
+    .iti__country-list {
+        max-width: 90vw;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .service-card,
+    .why-bayone-card,
+    .video-highlight-box,
+    .bayone-btn,
+    .bayone-submit-btn {
+        transition: none;
+    }
+}

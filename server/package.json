@@ -1,0 +1,28 @@
+{
+  "name": "bayone-brochure-api",
+  "version": "1.0.0",
+  "description": "BayOne website brochure request API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "bayone",
+    "brochure",
+    "api",
+    "express",
+    "nodemailer"
+  ],
+  "author": "BayOne",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "nodemailer": "^10.0.10"
+  }
+}
