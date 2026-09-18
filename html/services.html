@@ -13,10 +13,9 @@
     <link rel="canonical" href="https://www.bayone.com/">
     <link rel="canonical" href="https://www.bayone.com/">
     <!-- Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' http://localhost:5000 http://127.0.0.1:5000; frame-src 'self'; form-action 'self'; object-src 'none'; media-src 'self';">
-
-    <!-- Open Graph / Social Media -->
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://snap.licdn.com https://www.clarity.ms https://scripts.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' http://localhost:5000 http://127.0.0.1:5000 https://www.google-analytics.com https://www.googletagmanager.com https://snap.licdn.com https://www.clarity.ms https://scripts.clarity.ms https://px.ads.linkedin.com https://b.clarity.ms https://h.clarity.ms; frame-src 'self' https://www.googletagmanager.com https://www.clarity.ms; form-action 'self'; object-src 'none'; media-src 'self';">
+      <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Services | Innovative Business Solutions by BayOne">
     <meta property="og:description"
@@ -588,8 +587,8 @@
         <section class="services-video-section">
             <!-- VIDEO -->
             <video class="services-background-video" autoplay muted loop playsinline preload="metadata"
-                poster="assets/images/services/services-video-poster.jpg">
-                <source src="https://player.vimeo.com/video/566333930" type="video/mp4">
+                poster="assets/video-thumbnail.avif">
+                <source src="assets/services-dummy-video.mp4" type="video/mp4">
             </video>
             <!-- OVERLAY -->
             <div class="services-video-overlay"></div>

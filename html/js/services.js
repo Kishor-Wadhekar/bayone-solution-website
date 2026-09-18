@@ -11,7 +11,7 @@ let phoneInstance = null;
 if (phoneInput && typeof intlTelInput !== "undefined") {
     phoneInstance = intlTelInput(phoneInput, {
         initialCountry: "in",
-        preferredCountries: [
+        countryOrder: [
             "in",
             "us",
             "gb",
